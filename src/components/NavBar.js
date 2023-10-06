@@ -24,9 +24,14 @@ function NavBar() {
   return () => window.removeEventListener("scroll" , onScroll)
 
   } , [])
+
+  const onUpdateLink = (value) =>{
+    setActive(value)
+    console.log(value)
+  }
   return (
 
-    <Navbar bg="dark" expand="lg" className={scrolled ? "scrolled" : ""}>
+    <Navbar bg="dark" data-bs-theme="dark" expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
             <img src='none' alt='logo'></img>
@@ -37,9 +42,9 @@ function NavBar() {
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" >
-            <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}>Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <Nav.Link href="#skills">Skills</Nav.Link>
+            <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}  onClick={ () => onUpdateLink('home')}>Home</Nav.Link>
+            <Nav.Link href="#link" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={ () => onUpdateLink('skills')}>Link</Nav.Link>
+            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={ () => onUpdateLink('projects')}>Skills</Nav.Link>
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
