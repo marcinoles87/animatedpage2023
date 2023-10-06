@@ -2,6 +2,9 @@ import React , { useEffect, useState} from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavIcon1 from '../img/github2.png'
+import NavIcon2 from '../img/linkedin2.png'
+
 
 
 function NavBar() {
@@ -48,9 +51,8 @@ function NavBar() {
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-                <a href='social'><img src=''></img></a>
-                <a href='social'><img src=''></img></a>
-                <a href='social'><img src=''></img></a>
+                <a href='social'><img src={NavIcon1} alt='github'></img></a>
+                <a href='social'><img src={NavIcon2} alt='linkedln'></img></a>
             </div>
             <button className='vvd' onClick={ () => console.log('connect')}>Lets Connect</button>
           </span>
