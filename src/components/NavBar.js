@@ -1,10 +1,29 @@
-import React from 'react'
+import React , { useEffect, useState} from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 
 function NavBar() {
+  const [activeLink , setActive] = useState('home');
+  const [scrolled , setScrolled] = useState(false);
+
+  useEffect( () => {
+
+    const onScroll = () => {
+    if(window.screenY > 50){
+      setScrolled(true)
+      console.log('scrolled')
+    }else{
+      setScrolled(false)
+    }
+  }
+
+  window.addEventListener("scroll" , onScroll)
+
+  return () => window.removeEventListener("scroll" , onScroll)
+
+  } , [])
   return (
 
     <Navbar bg="dark" expand="lg" className="bg-body-tertiary">
@@ -28,7 +47,7 @@ function NavBar() {
                 <a href='social'><img src=''></img></a>
                 <a href='social'><img src=''></img></a>
             </div>
-            <button className='vvd' onClick={ () => console.log('connect')}></button>
+            <button className='vvd' onClick={ () => console.log('connect')}>Lets Connect</button>
           </span>
         </Navbar.Collapse>
       </Container>

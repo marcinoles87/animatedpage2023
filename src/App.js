@@ -1,12 +1,14 @@
 
+import { useState } from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
-import {Button} from 'react-bootstrap'
+
 
 function App() {
+  const [activeLink , setActive] = useState(false)
   return (
     <div className="App">
-      <Button></Button>
+      
       <NavBar></NavBar>
     </div>
   );
