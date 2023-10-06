@@ -26,7 +26,7 @@ function NavBar() {
   } , [])
   return (
 
-    <Navbar bg="dark" expand="lg" className="bg-body-tertiary">
+    <Navbar bg="dark" expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
             <img src='none' alt='logo'></img>
@@ -36,8 +36,8 @@ function NavBar() {
         </Navbar.Toggle>
 
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+          <Nav className="me-auto" >
+            <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}>Home</Nav.Link>
             <Nav.Link href="#link">Link</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
           </Nav>
