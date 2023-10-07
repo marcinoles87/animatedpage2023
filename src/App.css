@@ -4,6 +4,13 @@
     height: 100vh;
 }
 
+.header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    color: white;
+}
+
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 75px;
