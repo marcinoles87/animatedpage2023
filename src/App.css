@@ -25,6 +25,11 @@ nav.navbar-text{
     
 }
 
+#nav{
+    background-color: transparent;
+    opacity: none;
+}
+
 
 
 .social-icon a img{

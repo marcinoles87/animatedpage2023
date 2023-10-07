@@ -34,7 +34,7 @@ function NavBar() {
   }
   return (
 
-    <Navbar bg="dark" data-bs-theme="dark" expand="lg" className={scrolled ? "scrolled" : ""}>
+    <Navbar id="nav"  data-bs-theme="dark" expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
             <img src='none' alt='logo'></img>
