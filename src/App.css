@@ -32,6 +32,12 @@ nav.navbar-text{
     
 }
 
+.header_animated_text{
+    animation-name: animText;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
 #nav{
     background-color: transparent;
     opacity: none;
@@ -60,4 +66,19 @@ nav.navbar-text{
     filter: grayscale(0.5);
     filter
     : brightness(0.5);
+}
+
+
+@keyframes animText {
+    0%{
+
+    }
+    20%{
+        color:white;
+    }
+
+    100%{
+        color:blue;
+    }
+    
 }

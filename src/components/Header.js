@@ -13,7 +13,7 @@ function Header() {
         <Col className='col-one'>
         
         <button>Take a litle time to read...</button>
-        <h1>Hi I'm Marcin Web Developer</h1>
+        <h1 className='header_animated_text'>Hi I'm Marcin Web Developer</h1>
         <p>lorem ipsum lorem ipsum lorem ipsum
         lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
         lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum'
