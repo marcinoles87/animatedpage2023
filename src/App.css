@@ -46,9 +46,15 @@ nav.navbar-text{
 }
 
 .header_animated_text{
+    transform: scale(0.94);
     animation-name: animText;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    
+}
+
+.col-one{
+    color:white;
 }
 
 #nav{
@@ -73,7 +79,7 @@ nav.navbar-text{
     height: 50px;
     margin: 10px;
     transition: 1s ease;
-    animation-delay: calc(.2s * var(--i))
+   
 }
 
 .social-icon a img:hover{
@@ -92,8 +98,10 @@ nav.navbar-text{
     }
 
     100%{
-        color:blue; 
-        transform: rotateY(360deg)
+
+        color:blue;
+        transform: rotateY(360deg);
+        
     }
     
 }
