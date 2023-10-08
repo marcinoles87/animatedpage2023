@@ -4,12 +4,25 @@
     height: 100vh;
 }
 
-.header{
+/* .header{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
     margin-top: 20vh;
     color: white;
+} */
+
+.header .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
+
+header .row .col-one{
+    width: 40vw;
+}
+
+
 
 html{
     scroll-behavior: smooth;
@@ -60,12 +73,12 @@ nav.navbar-text{
     height: 50px;
     margin: 10px;
     transition: 1s ease;
+    animation-delay: calc(.2s * var(--i))
 }
 
 .social-icon a img:hover{
     filter: grayscale(0.5);
-    filter
-    : brightness(0.5);
+    filter: brightness(0.5);
 }
 
 
@@ -75,10 +88,16 @@ nav.navbar-text{
     }
     20%{
         color:white;
+        
     }
 
     100%{
-        color:blue;
+        color:blue; 
+        transform: rotateY(360deg)
     }
     
 }
+
+0%,80% {
+    
+  }
