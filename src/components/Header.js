@@ -2,6 +2,7 @@ import React from 'react'
   import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Astro from '../img/ast.png'
 
 
 function Header() {
@@ -22,7 +23,7 @@ function Header() {
         </Col>
 
         <Col className='col-two'>
-        <img src='' alt='logo-header'></img>
+        <img src={Astro} alt='logo-header'></img>
         
         </Col>
       </Row>
