@@ -37,10 +37,27 @@ nav.navbar-text{
     opacity: none;
 }
 
+.vvd{
+    background-color: transparent;
+    border: 1px solid white;
+    transition: 1s ease;
+}
+
+.vvd:hover{
+    background-color:white;
+    color:black
+}
 
 
 .social-icon a img{
     width: 50px;
     height: 50px;
     margin: 10px;
+    transition: 1s ease;
+}
+
+.social-icon a img:hover{
+    filter: grayscale(0.5);
+    filter
+    : brightness(0.5);
 }
