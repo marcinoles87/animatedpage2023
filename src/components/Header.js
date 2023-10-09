@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
   import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,6 +7,25 @@ import { ArrowRightCircle} from 'react-bootstrap-icons'
 
 
 function Header() {
+  const [loopNum , setloop] = useState(0);
+  const [deleting , setDeleting] = useState(false);
+  const toRotate = ['Web Developer' , 'Web Designer' , 'FrontEnd' ];
+  const [text , setText] = useState('');
+  const [delta, setDelta] = useState(300 - Math.random() * 100)
+  const period = 2000;
+
+  useEffect( () => {
+    let ticker = setInterval( () => {
+      ticker();
+
+    } , 3000)
+
+    return () => clearInterval(ticker)
+  },[text])
+
+
+
+  
   return (
 
     
@@ -24,7 +43,7 @@ function Header() {
         <button onClick={ () =>  console.log('connect')}>Lets connect <ArrowRightCircle  size={20}></ArrowRightCircle> </button>
         </Col>
 
-        <Col className='col-two'>
+        <Col xs={12} xl={5} md={6}>
         <img src={Astro} alt='logo-header'></img>
         
         </Col>
