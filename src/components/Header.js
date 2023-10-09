@@ -3,7 +3,7 @@ import React from 'react'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Astro from '../img/ast.png';
-import { ArrowRightCircle} from 'react-icons'
+import { ArrowRightCircle} from 'react-bootstrap-icons'
 
 
 function Header() {
@@ -21,7 +21,7 @@ function Header() {
         lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum'
         lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
         </span>
-        <button onClick={ () =>  console.log('connect')}>Lets connect </button>
+        <button onClick={ () =>  console.log('connect')}>Lets connect <ArrowRightCircle  size={20}></ArrowRightCircle> </button>
         </Col>
 
         <Col className='col-two'>
