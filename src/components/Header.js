@@ -7,7 +7,7 @@ import { ArrowRightCircle} from 'react-bootstrap-icons'
 
 
 function Header() {
-  const [loopNum , setloop] = useState(0);
+  let [loopNum , setloop] = useState(0);
   const [deleting , setDeleting] = useState(false);
   const toRotate = ['Web Developer' , 'Web Designer' , 'FrontEnd' ];
   const [text , setText] = useState('');
@@ -16,9 +16,15 @@ function Header() {
 
   useEffect( () => {
     let ticker = setInterval( () => {
-      ticker();
+      const letter = toRotate[0].charAt(loopNum)
+      console.log(letter)
+      if(letter => letter.length){
+        setloop(loopNum++)
+      }
+      
 
-    } , 3000)
+    } , 1000)
+
 
     return () => clearInterval(ticker)
   },[text])
