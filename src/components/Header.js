@@ -16,9 +16,12 @@ function Header() {
 
   useEffect( () => {
     let ticker = setInterval( () => {
-      const letter = toRotate[0].charAt(loopNum)
+      const word = toRotate[0]
+      const letter = word.charAt(loopNum)
       console.log(letter)
-      if(letter => letter.length){
+      if(letter => letter.length || word.length > loopNum){
+        console.log(loopNum)
+        console.log(word.length)
         setloop(loopNum++)
       }
       
