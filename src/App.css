@@ -45,13 +45,7 @@ nav.navbar-text{
     
 }
 
-.header_animated_text{
-    transform: scale(0.94);
-    animation-name: animText;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    
-}
+
 
 .col-one{
     color:white;
@@ -88,24 +82,3 @@ nav.navbar-text{
 }
 
 
-@keyframes animText {
-    0%{
-
-    }
-    20%{
-        color:white;
-        
-    }
-
-    100%{
-
-        color:blue;
-        transform: rotateY(360deg);
-        
-    }
-    
-}
-
-0%,80% {
-    
-  }
