@@ -23,6 +23,9 @@ function Header() {
         console.log(loopNum)
         console.log(word.length)
         setloop(loopNum++)
+        setText( (prevState) => {
+          return prevState + letter
+        })
       }
       
 
@@ -30,7 +33,7 @@ function Header() {
 
 
     return () => clearInterval(ticker)
-  },[text])
+  },[])
 
 
 
@@ -43,7 +46,7 @@ function Header() {
         <Col xs={12} xl={7} md={6}>
         
         <span className='tagline'>Welcome to my portfolio</span>
-        <h1>Hi I'm Marcin Web Developer</h1>
+        <h1>{text}</h1>
         <span>lorem ipsum lorem ipsum lorem ipsum
         lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
         lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum'
