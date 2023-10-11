@@ -9,14 +9,15 @@ import { ArrowRightCircle} from 'react-bootstrap-icons'
 function Header() {
   let [loopNum , setloop] = useState(0);
   const [deleting , setDeleting] = useState(false);
-  const toRotate = ['Web developer' , 'Web Designer' , 'FrontEnd' ];
+  const toRotate = ['Web' , 'Web Designer' , 'FrontEnd' ];
   const [text , setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100)
-  const period = 2000;
+  const [delta, setDelta] = useState(Math.floor(300 - Math.random() * 100))
+  let period = 0;
 
   useEffect( () => {
     let ticker = setInterval( () => {
-      const word = toRotate[0]
+      const word = toRotate[period]
+      console.log(period)
       const letter = word.charAt(loopNum)
       console.log(letter)
       if(letter => letter.length || word.length > loopNum){
@@ -31,6 +32,9 @@ function Header() {
           clearInterval(ticker)
           console.log('zatrzymano')
           setloop(0)
+          setText('')
+          period++
+          
         }
 
         
@@ -41,7 +45,7 @@ function Header() {
 
 
     return () => clearInterval(ticker)
-  },[])
+  },[loopNum])
 
 
 
@@ -50,7 +54,7 @@ function Header() {
 
     
     <Container className='banner'>
-      <Row className='align-items-center'>
+      <Row className=''>
         <Col xs={12} xl={7} md={6}>
         
         <span className='tagline'>Welcome to my portfolio</span>
@@ -64,7 +68,7 @@ function Header() {
         </Col>
 
         <Col xs={12} xl={5} md={6}>
-        <img src={Astro} alt='logo-header'></img>
+        <img className='img-header' src={Astro} alt='img-header'></img>
         
         </Col>
       </Row>

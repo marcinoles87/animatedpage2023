@@ -12,11 +12,12 @@
     color: white;
 } */
 
-.header .row{
+/* .header .row{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-}
+    color: white;
+} */
 
 header .row .col-one{
     width: 40vw;
@@ -79,6 +80,16 @@ nav.navbar-text{
 .social-icon a img:hover{
     filter: grayscale(0.5);
     filter: brightness(0.5);
+}
+
+
+.row{
+    color:white;
+}
+
+.img-header{
+    width: 40vw;
+    height: auto;
 }
 
 
