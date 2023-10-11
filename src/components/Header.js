@@ -26,6 +26,10 @@ function Header() {
         setText( (prevState) => {
           return prevState + letter
         })
+
+        if(text.length < letter.length){
+          clearInterval(ticker)
+        }
       }
       
 
