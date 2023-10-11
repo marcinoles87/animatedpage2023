@@ -11,7 +11,6 @@ function Header() {
   const [deleting , setDeleting] = useState(false);
   const toRotate = ['Web' , 'De' , 'Fron' ];
   const [text , setText] = useState('');
-  const [delta, setDelta] = useState(Math.floor(300 - Math.random() * 100))
   let [period , setPeriod] = useState(0)
 
   useEffect( () => {
@@ -26,17 +25,18 @@ function Header() {
   } , [])
 
   const tick = () => {
-    let i = loopNum % toRotate.length
+    let i = loopNum
     const fullText = toRotate[i];
-    const updateText = fullText.substring(period , period + 1)
-    console.log(updateText)
+    const updateText = fullText.charAt(period)
 
+    if(fullText.length > updateText.length){
     setText( (prevText) => { return prevText + updateText})
     setPeriod( period++)
-
-    if(fullText.length < updateText.length){
-      i++
+    }else{
+      setloop(loopNum++)
     }
+
+    
 
   }
 
