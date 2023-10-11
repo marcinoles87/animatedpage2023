@@ -9,7 +9,7 @@ import { ArrowRightCircle} from 'react-bootstrap-icons'
 function Header() {
   let [loopNum , setloop] = useState(0);
   const [deleting , setDeleting] = useState(false);
-  const toRotate = ['Web Developer' , 'Web Designer' , 'FrontEnd' ];
+  const toRotate = ['Web developer' , 'Web Designer' , 'FrontEnd' ];
   const [text , setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100)
   const period = 2000;
@@ -27,9 +27,13 @@ function Header() {
           return prevState + letter
         })
 
-        if(text.length < letter.length){
+        if(word.length < loopNum){
           clearInterval(ticker)
+          console.log('zatrzymano')
+          setloop(0)
         }
+
+        
       }
       
 
