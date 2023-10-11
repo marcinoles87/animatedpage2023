@@ -9,7 +9,7 @@ import { ArrowRightCircle} from 'react-bootstrap-icons'
 function Header() {
   let [loopNum , setloop] = useState(0);
   const [deleting , setDeleting] = useState(false);
-  const toRotate = ['Webd' , 'De' , 'Fron' ];
+  const toRotate = ['Front' , 'End' , 'Developer' ];
   const [text , setText] = useState('');
   let [period , setPeriod] = useState(0)
 
@@ -27,12 +27,12 @@ function Header() {
   const tick = () => {
   
     const fullText = toRotate[loopNum];
-    const updateText = fullText.substring(0 , fullText.length - 1)
+    const updateText = fullText.substring(0 , fullText.length)
 
     console.log(updateText.length)
     console.log(loopNum)
-    if(updateText){
-    setText( updateText)
+    if(toRotate.length ){
+    setText( (prev) => { return prev + updateText})
     setPeriod( loopNum++)
     }else{
       setText('ffff')
