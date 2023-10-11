@@ -30,7 +30,7 @@ function NavBar() {
 
   const onUpdateLink = (value) =>{
     setActive(value)
-    console.log(value)
+   
   }
   return (
 
