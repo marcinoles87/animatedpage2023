@@ -9,44 +9,27 @@ import { ArrowRightCircle} from 'react-bootstrap-icons'
 function Header() {
   let [loopNum , setloop] = useState(0);
   const [deleting , setDeleting] = useState(false);
-  const toRotate = ['Web' , 'Web Designer' , 'FrontEnd' ];
+  const toRotate = ['Web' , 'De' , 'Fron' ];
   const [text , setText] = useState('');
   const [delta, setDelta] = useState(Math.floor(300 - Math.random() * 100))
-  let period = 0;
+  const [period , setPeriod] = useState(0)
 
   useEffect( () => {
-    let ticker = setInterval( () => {
-      const word = toRotate[period]
-      console.log(period)
-      const letter = word.charAt(loopNum)
-      console.log(letter)
-      if(letter => letter.length || word.length > loopNum){
-        console.log(loopNum)
-        console.log(word.length)
-        setloop(loopNum++)
-        setText( (prevState) => {
-          return prevState + letter
-        })
 
-        if(word.length < loopNum){
-          clearInterval(ticker)
-          console.log('zatrzymano')
-          setloop(0)
-          setText('')
-          period++
-          
-        }
-
-        
-      }
-      
-
-    } , 1000)
+   let ticker = setInterval( () => {
+        tick()
+   } , 1000)
 
 
-    return () => clearInterval(ticker)
-  },[loopNum])
+   return  () => { clearInterval(ticker)}
 
+  } , [])
+
+  const tick = () => {
+    const i = loopNum % toRotate.length
+    console.log(i);
+    const fullText = toRotate[i];
+  }
 
 
   
