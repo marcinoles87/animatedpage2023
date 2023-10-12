@@ -92,7 +92,7 @@ nav.navbar-text{
 .img-header{
     width: 20vw;
     height: auto;
-    animation: astro 10s infinite;
+    animation: astro 10s infinite ;
 }
 
 .header-text{
@@ -115,10 +115,18 @@ nav.navbar-text{
         
 
     }
-    100%{
+    50%{
         width: 40vw;
         transform:translateY(50px);
     }
+
+
+    100%{
+        width: 20vw;
+        transform:translateY(0px);
+    }
+
+
     
 }
 
