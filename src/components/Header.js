@@ -11,7 +11,7 @@ function Header() {
   const [deleting , setDeleting] = useState(false);
   const toRotate = ['Front' , 'End' , 'Developer' ];
   const [text , setText] = useState('de');
-  let [period , setPeriod] = useState(0)
+ 
 
   useEffect( () => {
 
@@ -22,34 +22,15 @@ function Header() {
 
    return  () => { clearInterval(ticker)}
 
-  } , [loopNum])
+  } , [text])
 
   const tick = () => {
   
-    const fullText = toRotate[loopNum];
+    const i = loopNum % toRotate.length;
+    const fullText = toRotate[i];
     const updateText = fullText.substring(0 , fullText.length);
 
-    if(toRotate.length > 2){
-    setText( (prev) => { return prev + updateText})
-    setloop( loopNum++)
-    console.log(loopNum)
-    console.log(text.length)
-    }
-    
-    else{
-      console.log('usun')
-      setText('')
-      setloop(0)
-      
-      
-    }
-
-
-    
-
-   
-
-    
+    setText(updateText)
 
   }
 
