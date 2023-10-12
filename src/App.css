@@ -90,6 +90,29 @@ nav.navbar-text{
 .img-header{
     width: 40vw;
     height: auto;
+    animation: astro 4s infinite;
+}
+
+.header-text{
+    margin-bottom: 20px;
+    font-size: 50px;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    display: block;
+
+}
+
+@keyframes astro {
+
+    0%{
+        transform:translateY(50px);
+
+    }
+    100%{
+        width: 50vw;
+        transform:translateY(100px);
+    }
+    
 }
 
 

@@ -17,7 +17,7 @@ function Header() {
 
    let ticker = setInterval( () => {
         tick()
-   } , 1000)
+   } , 400)
 
 
    return  () => { clearInterval(ticker)}
@@ -54,7 +54,7 @@ function Header() {
         <Col xs={12} xl={7} md={6}>
         
         <span className='tagline'>Welcome to my portfolio</span>
-        <h1>{text}</h1>
+        <h1 className='header-text'>Hi everyone , my name is Marcin ! {text}</h1>
         <span>lorem ipsum lorem ipsum lorem ipsum
         lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
         lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum'
