@@ -50,6 +50,7 @@ nav.navbar-text{
 
 .col-one{
     color:white;
+    text-align: center;
 }
 
 #nav{
@@ -85,32 +86,38 @@ nav.navbar-text{
 
 .row{
     color:white;
+    text-align: center;
 }
 
 .img-header{
-    width: 40vw;
+    width: 20vw;
     height: auto;
-    animation: astro 4s infinite;
+    animation: astro 10s infinite;
 }
 
 .header-text{
     margin-bottom: 20px;
     font-size: 50px;
     letter-spacing: 0.8px;
-    line-height: 1;
+    line-height: 1.1;
+    padding: 10px;
     display: block;
 
+}
+
+.header-button{
+    margin-left: 10px;
 }
 
 @keyframes astro {
 
     0%{
-        transform:translateY(50px);
+        
 
     }
     100%{
-        width: 50vw;
-        transform:translateY(100px);
+        width: 40vw;
+        transform:translateY(50px);
     }
     
 }
