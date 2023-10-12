@@ -2,15 +2,15 @@ import React, { useEffect, useState } from 'react'
   import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Astro from '../img/ast.png';
+import Astro from '../img/moon2.png';
 import { ArrowRightCircle} from 'react-bootstrap-icons'
 
 
 function Header() {
   let [loopNum , setloop] = useState(0);
   const [deleting , setDeleting] = useState(false);
-  const toRotate = ['Front' , 'End' , 'Developer' ];
-  const [text , setText] = useState('de');
+  const toRotate = ['Frontend' , 'Future' , 'Developer' ];
+  const [text , setText] = useState('');
  
 
   useEffect( () => {
@@ -28,9 +28,19 @@ function Header() {
   
     const i = loopNum % toRotate.length;
     const fullText = toRotate[i];
-    const updateText = fullText.substring(0 , fullText.length);
+    const updateText = deleting ? fullText.substring(0 , text.length -1) : fullText.substring(0 , text.length +1) ;
 
+    console.log(i)
     setText(updateText)
+
+    if(!deleting && updateText === fullText){
+      setDeleting(true)
+      
+    }else if(deleting && updateText === ''){
+      setDeleting(false);
+      setloop(loopNum + 1)
+      setText( (prev) => {return  prev + updateText})
+    }
 
   }
 
