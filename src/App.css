@@ -107,7 +107,16 @@ nav.navbar-text{
 
 .header-button{
     margin-left: 10px;
+    transition: 1s;
 }
+
+.header-button:hover{
+    background-color: transparent;
+    color:white;
+    border: 1px solid white;
+}
+
+
 
 @keyframes astro {
 
