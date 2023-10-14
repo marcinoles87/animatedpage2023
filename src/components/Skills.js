@@ -39,20 +39,21 @@ return(
                 <h2>Skills</h2>
                 <p>jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkusz</p>
                 <Carousel responsive={responsive} infinite={true}>
-                <div>
-                    <img src={img1}  alt='img-carusel'/>
-                    <p className="legend">Legend 1</p>
-                </div>
+                    <div className='skill-percent'>
+                        <p className="legend">90 %</p>
+                    </div>
 
-                <div>
-                    <img src={img1}  alt='img-carusel'/>
-                    <p className="legend">Legend 1</p>
-                </div>
+                    <div className='skill-percent'>
+                        
+                        <p className="legend">80%</p>
+                    </div>
 
-                <div>
-                    <img src={img1}  alt='img-carusel'/>
-                    <p className="legend">Legend 1</p>
-                </div>
+                    <div className='skill-percent'>
+                        
+                        <p className="legend">70%</p>
+                    </div>
+
+               
                 </Carousel>
             </div>
             </Col>
