@@ -41,7 +41,7 @@ return(
                 <Carousel 
                   responsive={responsive} 
                   infinite={true}
-                  itemClass="carousel-item-padding-40-px"
+                  className='skill-slider'
                   >
                     <div className='skill-percent'>
                       <img src={img1} alt='img'></img>
@@ -51,13 +51,13 @@ return(
                     <div className='skill-percent'>
                     <img src={img1} alt='img'></img>
 
-                        <p className="legend">80%</p>
+                    <h5 className="legend">90 %</h5>
                     </div>
 
                     <div className='skill-percent'>
                     <img src={img1} alt='img'></img>
 
-                        <p className="legend">70%</p>
+                    <h5 className="legend">90 %</h5>
                     </div>
 
                

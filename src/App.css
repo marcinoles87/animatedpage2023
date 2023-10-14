@@ -2,7 +2,7 @@
     background-image: url('./img/background-header.jpg');
     background-color: black;
     width: 100vw;
-    height: 100vh;
+    
 }
 
 /* .header{
@@ -117,6 +117,21 @@ nav.navbar-text{
     border: 1px solid white;
 }
 
+/*Skill style*/
+
+.skill{
+    padding: 0 0 50px 0;
+    position: relative;
+}
+
+.skill-bx{
+    background-color: black;
+    border-radius: 64px;
+    text-align: center;
+    padding: 50px;
+    margin-top: 60px;
+}
+
 .skill-percent{
     width: 100px;
     height: 100px;
@@ -129,6 +144,34 @@ nav.navbar-text{
     border-radius: 50px;
     text-align: center;
 }
+
+.skill h5{
+    font-size: 45px;
+    font-weight: bold;
+
+}
+
+.skill p{
+    color:rgb(236, 88, 201);
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    line-height: 1.5em;
+    margin: 15px 0 75px 0;
+}
+
+.skill-slider{
+    width: 80%;
+    margin: 0 auto;
+    position:relative;
+}
+
+.skill-slider .skill-percent img{
+    width: 50%;
+    margin: 0 auto 15px auto;
+
+}
+
+
 
 
 
