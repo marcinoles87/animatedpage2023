@@ -44,16 +44,19 @@ return(
                   itemClass="carousel-item-padding-40-px"
                   >
                     <div className='skill-percent'>
-                        <p className="legend">90 %</p>
+                      <img src={img1} alt='img'></img>
+                        <h5 className="legend">90 %</h5>
                     </div>
 
                     <div className='skill-percent'>
-                        
+                    <img src={img1} alt='img'></img>
+
                         <p className="legend">80%</p>
                     </div>
 
                     <div className='skill-percent'>
-                        
+                    <img src={img1} alt='img'></img>
+
                         <p className="legend">70%</p>
                     </div>
 
