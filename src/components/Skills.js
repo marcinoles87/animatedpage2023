@@ -44,18 +44,18 @@ return(
                   className='skill-slider'
                   >
                     <div className='skill-percent'>
-                      <img src={img1} alt='img'></img>
+                      {/* <img src={img1} alt='img'></img> */}
                         <h5 className="legend">90 %</h5>
                     </div>
 
                     <div className='skill-percent'>
-                    <img src={img1} alt='img'></img>
+                    {/* <img src={img1} alt='img'></img> */}
 
                     <h5 className="legend">90 %</h5>
                     </div>
 
                     <div className='skill-percent'>
-                    <img src={img1} alt='img'></img>
+                    {/* <img src={img1} alt='img'></img> */}
 
                     <h5 className="legend">90 %</h5>
                     </div>
