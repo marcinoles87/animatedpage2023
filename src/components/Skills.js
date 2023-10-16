@@ -46,19 +46,36 @@ return(
                   >
                     <div className='skill-percent'>
                       <img src={img1} alt='img' style={{marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center"}}></img>
+                      <p>HTML</p>
                         <h5 className="legend">90 %</h5>
                     </div>
 
                     <div className='skill-percent'>
                     <img src={img1} alt='img' style={{marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center"}}></img>
+                    <p>CSS</p>
 
                     <h5 className="legend">90 %</h5>
                     </div>
 
                     <div className='skill-percent'>
                     <img src={img1} alt='img' style={{marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center"}}></img>
+                    <p>JS</p>
 
-                    <h5 className="legend">90 %</h5>
+                    <h5 className="legend">60 %</h5>
+                    </div>
+
+                    <div className='skill-percent'>
+                    <img src={img1} alt='img' style={{marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center"}}></img>
+                    <p>React</p>
+
+                    <h5 className="legend">70 %</h5>
+                    </div>
+
+                    <div className='skill-percent'>
+                    <img src={img1} alt='img' style={{marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "center"}}></img>
+                    <p>Team Player</p>
+
+                    <h5 className="legend">100 %</h5>
                     </div>
 
                

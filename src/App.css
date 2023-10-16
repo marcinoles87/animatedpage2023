@@ -122,28 +122,33 @@ nav.navbar-text{
  .skill{
     padding: 0 0 50px 0;
     position: relative;
+    
 }
 
 .skill-bx{
-    background-color: black;
+    /* background-color: black; */
+    background:rgba(0, 0, 0, 0.496);
     border-radius: 64px;
     text-align: center;
     padding: 50px;
     margin-top: 60px;
+   
 }
 
 .skill-percent{
-    width: 100px;
-    height: 100px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 10px solid;
-    border-color: pink green red blue;
+    border: 2px solid;
+    margin: 30px;
     border-radius: 50px;
-    text-align: center;
+    border-color: rgb(159, 193, 255) rgb(83, 130, 248) rgb(0, 89, 167) blue;
+    border-radius: 50px;
+    text-align: center; 
 }
+
 
 .skill h5{
     font-size: 45px;
@@ -152,7 +157,7 @@ nav.navbar-text{
 }
 
 .skill p{
-    color:rgb(236, 88, 201);
+    color:white;
     font-size: 15px;
     letter-spacing: 0.6px;
     line-height: 1.5em;
@@ -166,13 +171,11 @@ nav.navbar-text{
     position:relative;
 }
 
-/* .skill-slider .skill-percent img{
+.skill-slider .skill-percent img{
     width: 50%;
     margin: 0 auto 15px auto;
 
 }
-
- */
 
 
 
