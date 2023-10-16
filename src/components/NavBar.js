@@ -37,7 +37,8 @@ function NavBar() {
     <Navbar id="nav"  data-bs-theme="dark" expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-            <img src='none' alt='logo'></img>
+          LOGO
+            {/* <img src='none' alt='logo'></img> */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" >
             <span className='nav-bar-toggler-icon'></span>
