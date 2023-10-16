@@ -161,6 +161,7 @@ nav.navbar-text{
 
 .skill-slider{
     width: 80%;
+    justify-content: space-between;
     margin: 0 auto;
     position:relative;
 }
@@ -170,6 +171,8 @@ nav.navbar-text{
     margin: 0 auto 15px auto;
 
 }
+
+
 
 
 

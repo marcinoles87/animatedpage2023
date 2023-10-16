@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/esm/Row';
 import Container from 'react-bootstrap/esm/Container';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import img1 from '../img/ast.png'
+import img1 from '../img/github2.png'
 
 
 function Skills() {
@@ -44,18 +44,18 @@ return(
                   className='skill-slider'
                   >
                     <div className='skill-percent'>
-                      {/* <img src={img1} alt='img'></img> */}
+                      <img src={img1} alt='img'></img>
                         <h5 className="legend">90 %</h5>
                     </div>
 
                     <div className='skill-percent'>
-                    {/* <img src={img1} alt='img'></img> */}
+                    <img src={img1} alt='img'></img>
 
                     <h5 className="legend">90 %</h5>
                     </div>
 
                     <div className='skill-percent'>
-                    {/* <img src={img1} alt='img'></img> */}
+                    <img src={img1} alt='img'></img>
 
                     <h5 className="legend">90 %</h5>
                     </div>
