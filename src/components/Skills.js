@@ -41,6 +41,7 @@ return(
                 <Carousel 
                   responsive={responsive} 
                   infinite={true}
+                  arrow={true}
                   className='skill-slider'
                   >
                     <div className='skill-percent'>
