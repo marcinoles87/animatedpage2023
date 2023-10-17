@@ -1,6 +1,6 @@
 import React from 'react'
 
-import img1 from '../img/background.png'
+import img1 from '../img/github2.png'
 import Container from 'react-bootstrap/esm/Container'
 import Row from 'react-bootstrap/esm/Row'
 import Col from 'react-bootstrap/esm/Col'
@@ -22,6 +22,24 @@ function Projects() {
             descirption : "build app " ,
             imgUrl : img1
         },
+
+        {
+            title: "Development and FrontEnd" ,
+            descirption : "build app " ,
+            imgUrl : img1
+        },
+
+        {
+            title: "Development and FrontEnd" ,
+            descirption : "build app " ,
+            imgUrl : img1
+        } ,
+
+        {
+            title: "Development and FrontEnd" ,
+            descirption : "build app " ,
+            imgUrl : img1
+        } ,
 
         {
             title: "Development and FrontEnd" ,
@@ -52,6 +70,19 @@ function Projects() {
                 </Col>
             </Row>
         </Container>
+            <Row>
+                
+                    {projects.map( (item) => {
+                        return(
+                    <Col sm={4}>
+                        <h1>{item.descirption}</h1>
+                        <img src={item.imgUrl} alt={item.descirption}></img>
+                        <p>{item.descirption}</p>
+                    </Col>
+                        )
+                    })}
+                
+            </Row>
     </section>
   )
 }
