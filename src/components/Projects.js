@@ -61,7 +61,7 @@ function Projects() {
                 <Tab.Container id='projects-tabs' activeKey='first'>
                     <Nav variant="pills" defaultActiveKey="first" justify={true}>
                         <Nav.Item>
-                            <Nav.Link eventKey="first">Active</Nav.Link>
+                            <Nav.Link eventKey="first">Option 1</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="second">Option 2</Nav.Link>
