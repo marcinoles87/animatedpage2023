@@ -7,16 +7,27 @@
 
 /*Projects section */
 
+.card-img{
+    position: relative;
+}
 .card-img img{
     border:1px solid white;
     border-radius: 30px;
 }
 
 .card-img span{
-    position: absolute;
-    top:1000px;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 
+}
 
+.card-img h4{
+    position:absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-40% , -50%);
 }
 
 ul.mb-3.nav.nav-tabs{
