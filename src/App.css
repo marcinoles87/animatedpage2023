@@ -5,20 +5,22 @@
     
 }
 
-/* .header{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin-top: 20vh;
-    color: white;
-} */
+/*Projects section */
 
-/* .header .row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    color: white;
-} */
+ul.mb-3.nav.nav-tabs{
+    height: 100px;
+    justify-content: center;
+    align-content: center;
+    transition: 1s ease;
+}
+
+ul.mb-3.nav.nav-tabs:hover{
+    color:white;
+    background-color: blue;
+
+
+    
+}
 
 header .row .col-one{
     width: 40vw;
