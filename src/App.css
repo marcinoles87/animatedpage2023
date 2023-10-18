@@ -16,7 +16,8 @@ ul.mb-3.nav.nav-tabs{
 
 ul.mb-3.nav.nav-tabs:hover{
     color:white;
-    background-color: blue;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(106,1,129,1) 26%, rgba(140,54,138,1) 55%, rgba(1,116,150,1) 67%, rgba(0,46,192,1) 79%, rgba(0,212,255,1) 95%);
 
 
     

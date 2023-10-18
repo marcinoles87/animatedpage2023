@@ -70,13 +70,13 @@ function Projects() {
                             className="mb-3"
                             >
                             <Tab eventKey="home" title="Home">
-                            <Row>
-                                {projects.map( (item) => {
-                                    return(
-                                    <ProjectCard title={item.title} description={item.descirption} imgUrl={item.imgUrl}></ProjectCard>
-                                    )
-                                })}
-                            </Row>
+                                <Row>
+                                    {projects.map( (item) => {
+                                        return(
+                                        <ProjectCard title={item.title} description={item.descirption} imgUrl={item.imgUrl}></ProjectCard>
+                                        )
+                                    })}
+                                </Row>
                             </Tab>
                             <Tab eventKey="profile" title="Profile">
                                 Some Text Randome 
