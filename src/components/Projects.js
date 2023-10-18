@@ -14,7 +14,7 @@ import Tabs from 'react-bootstrap/Tabs'
 
 function Projects() {
 
-    const [key , setKey] = useState('home')
+    const [key , setKey] = useState('')
 
     const projects = [
         {
