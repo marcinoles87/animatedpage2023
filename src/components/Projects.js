@@ -9,6 +9,7 @@ import Nav from 'react-bootstrap/Nav';
 import NavItem from 'react-bootstrap/esm/NavItem';
 import NavLink from 'react-bootstrap/esm/NavLink';
 import Tab from 'react-bootstrap/Tab'
+import ProjectCard from './ProjectCard';
 
 function Projects() {
 
@@ -74,7 +75,7 @@ function Projects() {
                         <Tab.Pane eventKey='first'>
                                 {projects.map( (item) => {
                                     return(
-                                    <Col sm={4}> <h1>{item.title}</h1>   </Col>
+                                    <ProjectCard></ProjectCard>
                                     )
                                 })}
                         </Tab.Pane>
