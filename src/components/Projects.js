@@ -59,7 +59,7 @@ function Projects() {
                     <p>Visual Studio Code comes with Emmet preinstalled. Emmet is a plugin that helps you write HTML and CSS easier using shortcuts.Thanks to Emmet it is really easy to generate lorem ipsum. You no longer have to search for a lorem ipsum online generator.</p>
                     
                 <Tab.Container id='projects-tabs' activeKey='first'>
-                    <Nav variant="pills" defaultActiveKey="/home" justify={true}>
+                    <Nav variant="pills" defaultActiveKey="first" justify={true}>
                         <Nav.Item>
                             <Nav.Link eventKey="first">Active</Nav.Link>
                         </Nav.Item>
@@ -73,11 +73,13 @@ function Projects() {
 
                     <Tab.Content>
                         <Tab.Pane eventKey='first'>
+                            <Row>
                                 {projects.map( (item) => {
                                     return(
                                     <ProjectCard title={item.title} description={item.descirption} imgUrl={item.imgUrl}></ProjectCard>
                                     )
                                 })}
+                            </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey='second'> Lorem Ipsum</Tab.Pane>
                         <Tab.Pane eventKey='third'> Lorem Ipsum</Tab.Pane>
