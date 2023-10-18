@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import img1 from '../img/github2.png';
 import Container from 'react-bootstrap/esm/Container';
@@ -10,8 +10,11 @@ import NavItem from 'react-bootstrap/esm/NavItem';
 import NavLink from 'react-bootstrap/esm/NavLink';
 import Tab from 'react-bootstrap/Tab'
 import ProjectCard from './ProjectCard';
+import Tabs from 'react-bootstrap/Tabs'
 
 function Projects() {
+
+    const [key , setKey] = useState('home')
 
     const projects = [
         {
@@ -59,20 +62,14 @@ function Projects() {
                     <p>Visual Studio Code comes with Emmet preinstalled. Emmet is a plugin that helps you write HTML and CSS easier using shortcuts.Thanks to Emmet it is really easy to generate lorem ipsum. You no longer have to search for a lorem ipsum online generator.</p>
                     
                 <Tab.Container id='projects-tabs' activeKey='first'>
-                    <Nav variant="pills" defaultActiveKey="first" justify={true}>
-                        <Nav.Item>
-                            <Nav.Link eventKey="first">Option 1</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link eventKey="second">Option 2</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link eventKey="third">Option 3 </Nav.Link>
-                        </Nav.Item>
-                    </Nav>
-
-                    <Tab.Content>
-                        <Tab.Pane eventKey='first'>
+          
+                            <Tabs
+                            id="controlled-tab-example"
+                            activeKey={key}
+                            onSelect={(k) => setKey(k)}
+                            className="mb-3"
+                            >
+                            <Tab eventKey="home" title="Home">
                             <Row>
                                 {projects.map( (item) => {
                                     return(
@@ -80,11 +77,16 @@ function Projects() {
                                     )
                                 })}
                             </Row>
-                        </Tab.Pane>
-                        <Tab.Pane eventKey='second'> Lorem Ipsum</Tab.Pane>
-                        <Tab.Pane eventKey='third'> Lorem Ipsum</Tab.Pane>
+                            </Tab>
+                            <Tab eventKey="profile" title="Profile">
+                                Some Text Randome 
+                            </Tab>
+                            <Tab eventKey="contact" title="Contact" >
+                                Tab content for Contact
+                            </Tab>
+                            </Tabs>
 
-                    </Tab.Content>
+                    
                 </Tab.Container>
 
                 </Col>

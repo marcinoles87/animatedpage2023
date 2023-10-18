@@ -30,7 +30,6 @@ function Header() {
     const fullText = toRotate[i];
     const updateText = deleting ? fullText.substring(0 , text.length -1) : fullText.substring(0 , text.length +1) ;
 
-    console.log(i)
     setText(updateText)
 
     if(!deleting && updateText === fullText){
