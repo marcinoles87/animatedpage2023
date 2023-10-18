@@ -75,7 +75,7 @@ function Projects() {
                         <Tab.Pane eventKey='first'>
                                 {projects.map( (item) => {
                                     return(
-                                    <ProjectCard></ProjectCard>
+                                    <ProjectCard title={item.title} description={item.descirption} imgUrl={item.imgUrl}></ProjectCard>
                                     )
                                 })}
                         </Tab.Pane>
