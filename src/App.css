@@ -11,6 +11,7 @@
     position: relative;
 }
 .card-img img{
+    width: 28vw;
     border:1px solid white;
     border-radius: 30px;
     margin: 10px;
@@ -38,9 +39,6 @@ ul.mb-3.nav.nav-tabs{
     border-radius: 10px;
     
 }
-
-
-
 
 
 .nav-item li{
