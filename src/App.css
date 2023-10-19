@@ -20,7 +20,7 @@
     background-size: 0 0;
     background-position: bottom;
     background-repeat: no-repeat;
-    transition: .4s;
+    transition: 0.6s;
     
 
 }
@@ -35,21 +35,15 @@
 }
 .card-img img{
     width: 28vw;
-    
     border-radius: 30px;
-    margin: 5px;
-
-    
+    transition: 1s;
    
 }
 
-
-
 .card-img img:hover{
+    transform: scale(1.2);
     opacity: 1;
     z-index: -1;
-    
-    /* animation: imgAnim 3s ease; */
 }
 
 
@@ -315,20 +309,7 @@ nav.navbar-text{
 }
 
 
-@keyframes imgAnim {
-    0%{
-        background: linear-gradient(0deg, rgba(2,0,36,1) 10%, rgba(106,1,129,1) 100%, rgba(0,212,255,1) 100%);
-    }
 
-    20%{ background: linear-gradient(60deg, rgba(2,0,36,1) 10%, rgba(106,1,129,1) 100%, rgba(0,212,255,1) 100%);}
-    30%{ background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(106,1,129,1) 100%, rgba(0,212,255,1) 100%);}
-    40%{ background: linear-gradient(120deg, rgba(2,0,36,1) 10%, rgba(106,1,129,1) 100%, rgba(0,212,255,1) 100%);}
-    50%{ background: linear-gradient(150deg, rgba(2,0,36,1) 10%, rgba(106,1,129,1) 100%, rgba(0,212,255,1) 100%);}
-    70%{ background: linear-gradient(200deg, rgba(2,0,36,1) 10%, rgba(106,1,129,1) 100%, rgba(0,212,255,1) 100%);}
-
-    100%{background: linear-gradient(250deg, rgba(2,0,36,1) 10%, rgba(106,1,129,1) 100%, rgba(0,212,255,1) 100%);}
-    
-}
 
 
 
