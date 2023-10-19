@@ -9,12 +9,21 @@
 
 .card-img{
     position: relative;
+    background-image: linear-gradient(rgb(206, 90, 110), rgb(209, 0, 209));
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: .4s;
+}
+
+.card-img:hover{
+    background-size: 100% 100%;
 }
 .card-img img{
     width: 28vw;
     border:1px solid white;
     border-radius: 30px;
     margin: 10px;
+    
    
 }
 
