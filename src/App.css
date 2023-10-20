@@ -21,6 +21,7 @@
     background-position: bottom;
     background-repeat: no-repeat;
     transition: 0.6s;
+  
     
 
 }
@@ -63,10 +64,6 @@
     
 }
 
-.hide{
-    display:block;
-}
-
 .card-img h4{
     position:absolute;
     top:40%;
@@ -78,7 +75,7 @@
 
 .card-img h4:hover{
     opacity: 1;
-    display: none;
+    
     
 }
 
