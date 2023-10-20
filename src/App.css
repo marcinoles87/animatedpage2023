@@ -22,10 +22,8 @@
     background-repeat: no-repeat;
     transition: 0.6s;
   
-    
-
 }
-
+ 
 .card-img:hover{
     background-size: 200% 100%;
     border-radius: 30px;
@@ -41,7 +39,17 @@
    
 }
 
-.card-img img:hover{
+.card-text{
+    position:absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    transition: 2s ease;
+    opacity: 0.5;
+}
+
+.card-img img:hover .card-text{
+    top:60%;
     transform: scale(1.2);
     opacity: 1;
     z-index: -1;
@@ -61,23 +69,27 @@
 
 .card-img span:hover{
     opacity: 1;
+    display: inline;
     
 }
 
+
+
 .card-img h4{
-    position:absolute;
-    top:40%;
-    left: 50%;
-    transform: translate(-40% , -50%);
-    transition: 2s ease;
+ 
     
 }
 
 .card-img h4:hover{
     opacity: 1;
-    
-    
+     
 }
+
+.card-text{
+
+}
+
+
 
 ul.mb-3.nav.nav-tabs{
     justify-content: center;
