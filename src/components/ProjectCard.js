@@ -9,7 +9,7 @@ function ProjectCard({title , description , imgUrl}) {
         <div className='card-img' >
             <img src={imgUrl} alt={title}></img>
             <h4>{description}</h4>
-            <span>{title}</span>
+            <span className='hide'>{title}</span>
         </div>
 
     </Col>

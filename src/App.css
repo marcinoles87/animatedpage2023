@@ -29,7 +29,7 @@
     background-size: 200% 100%;
     border-radius: 30px;
     background-image: linear-gradient( top ,rgb(155, 78, 11), rgb(209, 0, 209));
-
+    
     
     
 }
@@ -60,6 +60,11 @@
 
 .card-img span:hover{
     opacity: 1;
+    
+}
+
+.hide{
+    display:block;
 }
 
 .card-img h4{
@@ -67,12 +72,14 @@
     top:40%;
     left: 50%;
     transform: translate(-40% , -50%);
-    opacity: 0;
     transition: 2s ease;
+    
 }
 
 .card-img h4:hover{
     opacity: 1;
+    display: none;
+    
 }
 
 ul.mb-3.nav.nav-tabs{
@@ -90,6 +97,8 @@ ul.mb-3.nav.nav-tabs{
     border: 2px solid white;
     
 }
+
+
 
 
 
