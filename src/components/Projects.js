@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 
 import img1 from '../img/github2.png';
+import img2 from '../img/vip.png';
+import img3 from '../img/vip2.png';
+import img4 from '../img/think.jpg';
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
@@ -26,19 +29,19 @@ function Projects() {
         {
             title: "Development and FrontEnd" ,
             descirption : "build app " ,
-            imgUrl : img1
+            imgUrl : img2
         },
 
         {
             title: "Development and FrontEnd" ,
             descirption : "build app " ,
-            imgUrl : img1
+            imgUrl : img3
         },
 
         {
             title: "Development and FrontEnd" ,
             descirption : "build app " ,
-            imgUrl : img1
+            imgUrl : img4
         } ,
 
         {

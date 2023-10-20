@@ -21,7 +21,12 @@
     background-position: bottom;
     background-repeat: no-repeat;
     transition: 0.6s;
+    overflow: hidden;
   
+}
+
+.card-img img{
+    opacity: 1;
 }
  
 .card-img:hover{
@@ -34,14 +39,22 @@
 }
 .card-img img{
     width: 28vw;
+    height: 30vh;
+    margin: 10px;
+    object-fit: cover;
     border-radius: 30px;
     transition: 0.5s;
+    
    
+}
+
+.card-img img:hover{
+    opacity: 0;
 }
 
 .card-text{
     position:absolute;
-    top:40%;
+    top:50%;
     left: 50%;
     transform: translate(-50% , -50%);
     transition: 2s ease;
@@ -49,9 +62,8 @@
 }
 
 .card-img:hover .card-text{
-    top:60%;
-    opacity: 1;
     
+    opacity: 1;
 }
 
 
