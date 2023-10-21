@@ -19,10 +19,14 @@ export const Contact = () => {
     const [status , setStatus] = useState({});
 
     const onFormUpdate = (category , value) =>{
-        setFormDetails(
-            [...formDetails] 
+        setFormDetails({
+            ...formDetails ,
+            [category] : value,
+        }
         )
     }
+
+    console.log(formInitialDetails)
     return(
      <section className='contact' id='contact'>
         <Container>
@@ -36,6 +40,7 @@ export const Contact = () => {
                         <Row>
                             <Col sm={6} className='px-1'>
                                 <input type='text' value={formDetails.firstName} placeholder='First Name' onChange={ (e) => onFormUpdate('firstName' , e.target.value)}></input>
+                                <input type='text' value={formDetails.lastName} placeholder='Last Name' onChange={ (e) => onFormUpdate('lastName' , e.target.value)}></input>
                             </Col>
                             <Col sm={6} className='px-1'></Col>
                         </Row>
