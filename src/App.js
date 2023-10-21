@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import Header from './components/Header';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import { Contact } from './components/Contact';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Header></Header>
       <Skills></Skills>
       <Projects></Projects>
+      <Contact></Contact>
     </div>
   );
 }
