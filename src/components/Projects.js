@@ -74,9 +74,9 @@ function Projects() {
                             >
                             <Tab eventKey="home" title="Home">
                                 <Row>
-                                    {projects.map( (item) => {
+                                    {projects.map( (item , index) => {
                                         return(
-                                        <ProjectCard title={item.title} description={item.descirption} imgUrl={item.imgUrl}></ProjectCard>
+                                        <ProjectCard title={item.title} description={item.descirption} imgUrl={item.imgUrl} key={index}></ProjectCard>
                                         )
                                     })}
                                 </Row>

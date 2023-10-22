@@ -1,5 +1,5 @@
 
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/Col';
@@ -18,13 +18,20 @@ export const Contact = () => {
     const [buttonText , setButtonText] = useState('Send');
     const [status , setStatus] = useState({});
 
-    const onFormUpdate = (category , value) =>{
-        setFormDetails({
-            ...formDetails ,
-            [category] : value,
-        }
-        )
-    }
+
+            const onFormUpdate = (category , value) =>{
+            setFormDetails({
+                ...formDetails ,
+                [category] : value,
+            })}
+
+            console.log(formInitialDetails)
+        
+
+        
+    
+       
+       
 
     console.log(formInitialDetails)
     return(
