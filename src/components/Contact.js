@@ -27,7 +27,7 @@ export const Contact = () => {
 
             
     const handleonSubmit = () => {
-
+        console.log('udalo sie wysylamy')
     }
 
 
@@ -40,15 +40,15 @@ export const Contact = () => {
                 </Col>
                 <Col md={6}>
                     <h2> Get in Touch</h2>
-                    <form>
+                    <form onSubmit={handleonSubmit}>
                         <Row>
-                            <Col sm={6} md={6} className='px-1'>
+                            <Col sm={6}  className='px-1'>
                                 <input type='text' value={formDetails.firstName} placeholder='First Name' onChange={ (e) => onFormUpdate('firstName' , e.target.value)}></input>
                                 <input type='text' value={formDetails.lastName} placeholder='Last Name' onChange={ (e) => onFormUpdate('lastName' , e.target.value)}></input>
                                 <input type='email' value={formDetails.email} placeholder='Email' onChange={ (e) => onFormUpdate('email' , e.target.value)}></input>
                                 <input type='number' value={formDetails.phone} placeholder='Phone' onChange={ (e) => onFormUpdate('phone' , e.target.value)}></input>
                                 <textarea type='text' rows={6} value={formDetails.message} placeholder='Message' onChange={ (e) => onFormUpdate('message' , e.target.value)}></textarea>
-                                <button type='submit' onSubmit={handleonSubmit}>{buttonText}</button>
+                                <button type='submit'>{buttonText}</button>
                             </Col>
                             
                         </Row>
@@ -57,7 +57,7 @@ export const Contact = () => {
                 
                     {status.message &&
                     <Col>
-                        <p className={status.success === false ? 'false' : status.message}></p>
+                        <p className={status.success === false ? 'false' : 'success'}> {status.message}</p>
                     </Col>}
                 
             </Row>
