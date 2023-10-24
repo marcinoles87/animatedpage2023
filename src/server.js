@@ -17,6 +17,8 @@ const contactEmail = nodemailer.createTransport({
     }
 });
 
+console.log(contactEmail)
+
 contactEmail.verify( (error) => {
     if(error) {
         console.log(error)
