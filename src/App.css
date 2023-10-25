@@ -316,6 +316,7 @@ nav.navbar-text{
 }
 
 .px-1 input , textarea{
+    width: 60%;
     line-height: 30px;
     border: 1px solid;
     border-bottom: 4px solid black;
