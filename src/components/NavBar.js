@@ -55,7 +55,6 @@ function NavBar() {
                 <a href='social'><img src={NavIcon1} alt='github'></img></a>
                 <a href='social'><img src={NavIcon2} alt='linkedln'></img></a>
             </div>
-            <button className='vvd' onClick={ () => console.log('connect')}>Lets Connect</button>
           </span>
         </Navbar.Collapse>
       </Container>

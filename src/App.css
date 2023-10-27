@@ -5,11 +5,20 @@
 }
 
 .App{
-    background-image: url('./img/background.png');
+    /* background-image: url('./img/background.png'); */
     background-color: black;
     width: 100vw;
     box-sizing: border-box;
     
+}
+
+a img{
+
+}
+
+
+.App p , span{
+    color:#665f5f
 }
 
 /*Projects section */
@@ -40,9 +49,8 @@
     
 }
 .card-img img{
-    width: 25vw;
+    width: 100%;
     height: 33vh;
-    margin: 10px;
     object-fit: cover;
     border-radius: 30px;
     transition: 0.8s;
@@ -166,8 +174,12 @@ nav.navbar-text{
 }
 
 .vvd{
+    color:white;
+    margin-left: 10px;
+    padding: 10px;
     background-color: transparent;
     border: 1px solid white;
+    border-radius: 20px;
     transition: 1s ease;
 }
 
@@ -180,7 +192,11 @@ nav.navbar-text{
 .social-icon a img{
     width: 50px;
     height: 50px;
-    margin: 10px;
+    margin: 5px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 5px;
     transition: 1s ease;
    
 }
@@ -263,11 +279,11 @@ nav.navbar-text{
 }
 
 .skill p{
-    color:white;
+    color:#665f5f;
     font-size: 15px;
     letter-spacing: 0.6px;
     line-height: 1.5em;
-    margin: 15px 0 75px 0;
+    margin: 15px 0 15px 0;
 }
 
 .skill-slider{
@@ -279,7 +295,7 @@ nav.navbar-text{
 
 .skill-slider .skill-percent img{
     width: 50%;
-    margin: 0 auto 15px auto;
+    margin: 10px auto 15px auto;
 
 }
 

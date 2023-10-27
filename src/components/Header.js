@@ -59,6 +59,8 @@ function Header() {
         lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum'
         lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
         </span>
+        <button className='vvd' onClick={ () => console.log('connect')}>Lets Connect</button>
+
         </Col>
 
         <Col xs={12} xl={5} md={6}>

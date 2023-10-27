@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/esm/Row';
 import Container from 'react-bootstrap/esm/Container';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import img1 from '../img/github2.png'
+import img1 from '../img/circle.png'
 
 
 function Skills() {
