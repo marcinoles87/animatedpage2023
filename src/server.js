@@ -7,6 +7,11 @@ const app = express();
 const port = 3000;
 const nodemailer = require('nodemailer');
 
+app.use(cors());
+app.use(express.json());
+app.use("/" , router);
+app.listen(5000, () => console.log("serwer running"));
+
 
 
 const contactEmail = nodemailer.createTransport({
