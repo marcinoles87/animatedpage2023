@@ -26,8 +26,25 @@ export const Contact = () => {
             })}
 
             
-    const handleonSubmit = () => {
-        console.log('udalo sie wysylamy')
+    const handleonSubmit =  async (e) => {
+        e.preventDefault();
+        setButtonText('sending...');
+        let response = await fetch("https://localhost:5000/contact/" , {
+            method : "POST" ,
+            headers : {
+                "Content-Type" : "Application/json;charset=utf-8" ,
+            },
+            body: JSON.stringify(formDetails)
+        });
+        setButtonText("Send");
+        let result = response.json();
+        setFormDetails(formInitialDetails);
+        if(result.code === 200){
+            setStatus( {success : true , message: "message succesful"});
+        }else{
+            setStatus({ success:false , message : 'wrong ... please try later'})
+        }
+       
     }
 
 

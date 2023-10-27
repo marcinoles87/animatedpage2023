@@ -18,7 +18,7 @@ const contactEmail = nodemailer.createTransport({
     service: 'gmail' ,
     auth : {
         user : "marcinoles87@gmail.com",
-        pass: "xxx" ,
+        pass: "marcinnh87" ,
     }
 });
 
@@ -41,29 +41,32 @@ router.post('/contact', (req , res) => {
 
     const mail = {
         from : name ,
-        to : 'mrc87@gmail.com',
+        to : 'marcinoles87@gmail.com',
         subject : 'contact from personal page' ,
         html : `<p> name : ${name}</p>
-                <p> email : ${mail} </p>
-                <p> message : ${message} </p>`
+                <p> email : ${email} </p>
+                <p> message : ${message} </p>
+                <p> contact : ${phone} </p>`
 
     };
 
     contactEmail.sendMail(mail , (error) => {
         if(error){
             res.json(error)
+        }else{
+            res.json( {code : 200 , status : "Message send" })
         }
     })
 
 })
 
 
-let mailOptions = {
-    from: "sss@o2.pl",
-    to: "marcino@gmail.com",
-    subject: 'portfolio maila ',
-    text: "Hello world?",
-    html: "<b>Hello world?</b>",
-};
+// let mailOptions = {
+//     from: "sss@o2.pl",
+//     to: "marcino@gmail.com",
+//     subject: 'portfolio maila ',
+//     text: "Hello world?",
+//     html: "<b>Hello world?</b>",
+// };
 
-transport.sendMail(mailOptions);
+// transport.sendMail(mailOptions);
