@@ -68,6 +68,7 @@ function Projects() {
           
                             <Tabs
                             id="controlled-tab-example"
+                            defaultActiveKey={'home'}
                             activeKey={key}
                             onSelect={(k) => setKey(k)}
                             className="mb-3"

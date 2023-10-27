@@ -1,72 +1,24 @@
+var nodemailer = require('nodemailer');
 
-import transport from 'nodemailer'
-const express = require('express')
-const router = express.Router();
-const cors = require('cors')
-const app = express();
-const port = 3000;
-const nodemailer = require('nodemailer');
-
-app.use(cors());
-app.use(express.json());
-app.use("/" , router);
-app.listen(5000, () => console.log("serwer running"));
-
-
-
-const contactEmail = nodemailer.createTransport({
-    service: 'gmail' ,
-    auth : {
-        user : "marcinoles87@gmail.com",
-        pass: "marcinnh87" ,
-    }
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'youremail@gmail.com',
+    pass: 'yourpassword'
+  }
 });
 
-console.log(contactEmail)
+var mailOptions = {
+  from: 'youremail@gmail.com',
+  to: 'myfriend@yahoo.com',
+  subject: 'Sending Email using Node.js',
+  text: 'That was easy!'
+};
 
-contactEmail.verify( (error) => {
-    if(error) {
-        console.log(error)
-    }else{
-        console.log('ready to send')
-    }
-
-})
-
-router.post('/contact', (req , res) => {
-    const name = req.body.firsName + req.body.lastName;
-    const email = req.body.email;
-    const message = req.body.message;
-    const phone = req.body.phone;
-
-    const mail = {
-        from : name ,
-        to : 'marcinoles87@gmail.com',
-        subject : 'contact from personal page' ,
-        html : `<p> name : ${name}</p>
-                <p> email : ${email} </p>
-                <p> message : ${message} </p>
-                <p> contact : ${phone} </p>`
-
-    };
-
-    contactEmail.sendMail(mail , (error) => {
-        if(error){
-            res.json(error)
-        }else{
-            res.json( {code : 200 , status : "Message send" })
-        }
-    })
-
-})
-
-
-// let mailOptions = {
-//     from: "sss@o2.pl",
-//     to: "marcino@gmail.com",
-//     subject: 'portfolio maila ',
-//     text: "Hello world?",
-//     html: "<b>Hello world?</b>",
-// };
-
-// transport.sendMail(mailOptions);
+transporter.sendMail(mailOptions, function(error, info){
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});

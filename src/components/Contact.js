@@ -6,6 +6,10 @@ import Col from 'react-bootstrap/Col';
 import imgContact from '../img/contact.jpg'
 
 export const Contact = () => {
+
+    
+
+    
     const formInitialDetails = {
         firstName: '',
         lastName: '',

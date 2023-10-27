@@ -15,8 +15,7 @@
 /*Projects section */
 
 .card-img{
-    width: 30%;
-    height: 35vh;
+  
     position: relative;
     background-image: linear-gradient(rgb(234, 156, 87), rgb(209, 0, 209));
     background-size: 0 0;
@@ -41,8 +40,8 @@
     
 }
 .card-img img{
-    width: 28vw;
-    height: 30vh;
+    width: 25vw;
+    height: 33vh;
     margin: 10px;
     object-fit: cover;
     border-radius: 30px;
