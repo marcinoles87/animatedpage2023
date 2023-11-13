@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/marcinoles87/animatedpage2023/static/css/main.b43680d7.css",
-    "main.js": "/marcinoles87/animatedpage2023/static/js/main.bcd9d4de.js",
-    "static/media/vip.png": "/marcinoles87/animatedpage2023/static/media/vip.33613b24514af606bc88.png",
-    "static/media/vip2.png": "/marcinoles87/animatedpage2023/static/media/vip2.71d13cecf465874a765b.png",
-    "static/media/moon2.png": "/marcinoles87/animatedpage2023/static/media/moon2.7b5833e1d2ddc0e99df8.png",
-    "static/media/contact.jpg": "/marcinoles87/animatedpage2023/static/media/contact.3af12413d76d7fb5f7f8.jpg",
-    "static/media/think.jpg": "/marcinoles87/animatedpage2023/static/media/think.980800d9640e721e49f6.jpg",
-    "static/media/circle.png": "/marcinoles87/animatedpage2023/static/media/circle.e21294fe237e2f1d761e.png",
-    "static/media/github2.png": "/marcinoles87/animatedpage2023/static/media/github2.78fe6bdc3e4eb9b848fd.png",
-    "static/media/linkedin2.png": "/marcinoles87/animatedpage2023/static/media/linkedin2.3a5ca32d944506105e4a.png",
-    "static/media/revicons.eot": "/marcinoles87/animatedpage2023/static/media/revicons.a77de540a38981833f9e.eot",
-    "static/media/revicons.ttf": "/marcinoles87/animatedpage2023/static/media/revicons.57fd05d4ae650374c8de.ttf",
-    "static/media/revicons.woff": "/marcinoles87/animatedpage2023/static/media/revicons.e8746a624ed098489406.woff",
-    "index.html": "/marcinoles87/animatedpage2023/index.html",
-    "main.b43680d7.css.map": "/marcinoles87/animatedpage2023/static/css/main.b43680d7.css.map",
-    "main.bcd9d4de.js.map": "/marcinoles87/animatedpage2023/static/js/main.bcd9d4de.js.map"
+    "main.css": "/animatedpage2023/static/css/main.f3be95e2.css",
+    "main.js": "/animatedpage2023/static/js/main.ee71fa62.js",
+    "static/media/vip.png": "/animatedpage2023/static/media/vip.33613b24514af606bc88.png",
+    "static/media/vip2.png": "/animatedpage2023/static/media/vip2.71d13cecf465874a765b.png",
+    "static/media/moon2.png": "/animatedpage2023/static/media/moon2.7b5833e1d2ddc0e99df8.png",
+    "static/media/contact.jpg": "/animatedpage2023/static/media/contact.3af12413d76d7fb5f7f8.jpg",
+    "static/media/think.jpg": "/animatedpage2023/static/media/think.980800d9640e721e49f6.jpg",
+    "static/media/circle.png": "/animatedpage2023/static/media/circle.e21294fe237e2f1d761e.png",
+    "static/media/github2.png": "/animatedpage2023/static/media/github2.78fe6bdc3e4eb9b848fd.png",
+    "static/media/linkedin2.png": "/animatedpage2023/static/media/linkedin2.3a5ca32d944506105e4a.png",
+    "static/media/revicons.eot": "/animatedpage2023/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/animatedpage2023/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/animatedpage2023/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/animatedpage2023/index.html",
+    "main.f3be95e2.css.map": "/animatedpage2023/static/css/main.f3be95e2.css.map",
+    "main.ee71fa62.js.map": "/animatedpage2023/static/js/main.ee71fa62.js.map"
   },
   "entrypoints": [
-    "static/css/main.b43680d7.css",
-    "static/js/main.bcd9d4de.js"
+    "static/css/main.f3be95e2.css",
+    "static/js/main.ee71fa62.js"
   ]
 }
